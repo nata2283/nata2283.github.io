@@ -43,28 +43,28 @@ body {
 
 .top-menu li {
     display: inline-block;
-    padding-top: 10px;
 }
 
 .top-menu a {
     color:#60b5ed;
     font-size: 14px;
+    line-height: 35px;
     text-decoration: none;
 }
 
 .bike {
     width: 95px;
-    padding-left: 5px;
+    text-align: center;
 }
 
 .vender {
     width: 63px;
-    padding-left: 5px;
+    text-align: center;
 }
 
 .forum {
     width: 60px;
-    padding-left: 5px;
+     text-align: center;
 }
 
 .cont {
@@ -74,22 +74,18 @@ body {
 
 .ajuda {
     width: 60px;
-    padding-left: 5px;
-}
-
-.top-menu li:hover {
-    
-    background: #4eabda;
-    height: 25px; 
-    font-weight: bold;
-      color: #fff;
+     text-align: center;
 }
 
 .top-menu a:hover {
-    
+    display: block;
+     height: 35px; 
+   /* padding-left: 3px;*/
+    background: #4eabda;
     font-weight: bold;
       color: #fff;
 }
+
 
 .right-menu {
      display: inline-block;
