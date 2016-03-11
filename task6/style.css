@@ -476,7 +476,6 @@ figcaption span {
     font-style: italic;
 }
 
-
 .right-side {
     width: 182px;
     height: 300px;
@@ -512,13 +511,28 @@ label {
     line-height: 1.5;
 }
 
-input [type="checkbox"] {
-    display: inline-block;
+[type="checkbox"] {
+    display: none;
+}
+
+ [type="checkbox"] + label span {
+  display: inline-block;
+  position: relative;
+  left: -7px; 
+  top: 0;
+  background: url(images/checkbox.png) no-repeat 0 0; 
+  width: 11px; 
+  height: 11px; 
+  margin-right: 7px;
+}
+
+input[type="checkbox"]:checked  {
+    background: url(images/checkbox.png) no-repeat 0 0;
 }
 
 .check-brend {
     display: block;
-    margin-left: 26px;
+    margin-left: 26px;   
 }
 
 .check-brend label {
@@ -527,7 +541,11 @@ input [type="checkbox"] {
     font-family: "Lucida Sans Unicode";
     line-height: 1.9;
     padding-left: 7px;
+    
+ 
+ 
 }
+
 
 .radius-right {
     border: 1px solid #79878d;
