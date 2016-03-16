@@ -209,11 +209,16 @@ header p > a {
     left: 38px;
     display: none;
     color: #fff;
+    background: #3f3247;
     background: rgba(61, 48, 69, 0.9);
     z-index: 5;
     text-align: center;
     border: 1px solid #111b22;
+     -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
     border-radius: 5px;
+    behavior: url("border-radius.htc");
+    
 }
 
 .hover-box > li:hover > ul {
@@ -300,10 +305,20 @@ input[type="radio"] {
 }
 
 section {
-    background: linear-gradient(to top, #37293e, #765283);
-    height: 577px;
+     height: 577px;
     color: #fff;
-    padding-top: 10px;
+    padding-top: 1px;
+     /*background: linear-gradient(to top, #37293e, #765283);*/
+    /*background-color: #765283;*/
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#37293e), to(#765283)); /* Safari 4-5, Chrome 1-10, iOS 3.2-4.3, Android 2.1-3.0 */
+  background: -webkit-linear-gradient(top, #37293e, #765283); /* Chrome 10+, Safari 5.1+, iOS 5+, Android 4+ */
+  background-image: -moz-linear-gradient(top, #765283, #37293e); /* Firefox 3.6+ */
+  background: -ms-linear-gradient(top, #37293e, #765283); /* IE 10+ */
+  background-image: -o-linear-gradient(top, #37293e, #765283); /* Opera 11.10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#765283', endColorstr='#37293e');    
+  background-image: linear-gradient(to top, #37293e, #765283);
+    background-color: #765283;
+   
 }
 
 .company {
@@ -497,6 +512,38 @@ section {
     height: 22px;
     overflow: hidden;  
 }
+
+ .box--content3 .box__img {
+        height: 49px;
+        width: 49px;
+        float: left;
+        background:url(images/circle.png) left top no-repeat;
+        margin-top: 17px;
+        margin-right: 14px;
+    }
+    
+    .box--content3 .box__text h2 {
+        font-family: 'Open_Sans Extrabold';
+        line-height: 22px;
+        overflow: hidden;
+        font-size: 16px;
+        
+    }
+    
+    .box--content3 .box__text {
+        margin-left: 1px;
+        margin-top: 10px;
+        width: 376px;
+        height: 70px;
+    }
+
+    .box--content3 .box__text p {
+        font-family: 'Open Sans Light';
+        font-size: 16px;
+        line-height: 22px;
+        height: 22px;
+        overflow: hidden;  
+    }
 
 .recent-link a {
     color: #000;
@@ -1057,6 +1104,7 @@ footer {
     }    
 }
 
+
 @media (min-width:960px) {
     
     body {
@@ -1179,6 +1227,7 @@ footer {
     }
     
     section {
+        width: 100%;
         height: 323px;
     }
     
@@ -1270,7 +1319,7 @@ footer {
     }
     
      .box--third .box__link {
-        margin-right: 0px;
+        margin-right: 9px;
     }
     
     .box--third .box__link a {
@@ -1470,7 +1519,7 @@ footer {
     }
     
     .foot-left {
-        width: 960px;
+        width: 965px;
         height: 100px;
         margin: 0 auto;
     }
@@ -1479,5 +1528,4 @@ footer {
         margin-top: 43px;
     }    
     
-
 }
