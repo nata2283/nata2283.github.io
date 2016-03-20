@@ -1459,11 +1459,7 @@ footer {
      .box--third .box__link {
         margin-right: 16px;
     }
-    
-    .box--third .box__link a {
-        margin-right: -15px;
-    }
-    
+      
     .main-content {
         width: 960px;
         height: 418px;
