@@ -47,7 +47,7 @@
     padding:0;
 }
 
-body {
+body  {
    min-width:320px;
     max-width: 480px;
     width: 100%;
@@ -158,27 +158,30 @@ header p > a {
     overflow: hidden;
 }
 
-.text-header h1 {
+.text-header .title-text {
     font-size: 36px;
+    font-family: 'League Gothic Regular';
     color: #fefefe;
-    line-height: 36px;
+    line-height: 39px;
+   
 }
 
-.text-header h2 {
+.text-header .title-h2 {
     font-size: 18px;
     color: #edbfff;
+    font-family: 'League Gothic Regular';
 }
 
-.text-header p {
+/*.text-header p {
     display: none;
-}
+}*/
 
 .iphon {
      display: none;  
 }
 
 .right-arrow {
-    margin-top: 9px;
+    margin-top: 15px;
 }
 
 .hover-box ul, li {
@@ -218,9 +221,7 @@ header p > a {
     border: 1px solid #111b22;
      -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
-    border-radius: 5px;
-    behavior: url("border-radius.htc");
-    
+    border-radius: 5px;    
 }
 
 .hover-box > li:hover > ul {
@@ -252,9 +253,6 @@ header p > a {
     width: 86px;
     height: 19px;
     margin: 0 auto;
-    /*margin: 62px auto 0;
-    position: relative;
-    top: 25px;*/
 }
 
 input[type="radio"] {
@@ -310,8 +308,8 @@ input[type="radio"] {
 section {
      height: 577px;
     color: #fff;
-    padding-top: 1px;
-     /*background: linear-gradient(to top, #37293e, #765283);*/
+    padding-top: 1px;   
+       /*background: linear-gradient(to top, #37293e, #765283);*/
     /*background-color: #765283;*/
   background-image: -webkit-gradient(linear, left top, left bottom, from(#37293e), to(#765283)); /* Safari 4-5, Chrome 1-10, iOS 3.2-4.3, Android 2.1-3.0 */
   background: -webkit-linear-gradient(top, #37293e, #765283); /* Chrome 10+, Safari 5.1+, iOS 5+, Android 4+ */
@@ -321,7 +319,7 @@ section {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#765283', endColorstr='#37293e');    
   background-image: linear-gradient(to top, #37293e, #765283);
     background-color: #765283;
-   
+
 }
 
 .company {
@@ -329,8 +327,8 @@ section {
 }
 
 .box {
-    width: 260px;
-    margin: 54px auto 0;
+    width: 270px;
+    margin: 53px auto 0;
     overflow: hidden;
 }
 
@@ -340,6 +338,7 @@ section {
     float: left;
     background:url(images/icon.png) left top no-repeat;
     margin-right: 25px;
+    margin-left: 5px;
 }
 
 .box__text {
@@ -353,16 +352,19 @@ section {
     font-family: 'Open Sans Light';
     font-size: 16px;
     line-height: 23px;
+    text-shadow: 1px 1px 1px #000, 0 0 1pt #000;
 }
 
-.box__text  h1 {
+.box__text  .title-text {
      font-size: 24px;
+     font-family: 'League Gothic Regular';
      padding-bottom: 4px;
+    text-shadow: 1px 1px 1px #000, 0 0 1pt #000;
 }
 
 .box__link {
      float: right;
-     margin-top: 15px;
+     margin-top: 16px;
     
 }
 
@@ -418,14 +420,14 @@ section {
 
 .main-content {
     margin: 0 auto;
-    padding-top: 66px;
+    padding-top: 71px;
 }
 
 .blog {
     background: #fff;
-    width: 86%;
+    width: 255px;
     height: 273px;
-    margin-left: 25px;
+    margin: 0 auto;
     position: relative;
 }
 
@@ -434,30 +436,31 @@ section {
     height: 49px;
     float: left;
     position: absolute;
-    top: 23px;
-    left: -5px;
+    top: 17px;
+    left: -23px;
 }
 
 .text-blog {
     float: left;
-    padding-top: 29px;
-    width: 69%;
-    margin-left: 53px;
-    height: 220px;
+    padding-top: 18px;
+    width: 183px;
+    margin-left: 35px;
+    height: 225px;
     overflow: hidden;
 }
 
 .text-blog p {
     font-size: 16px;
     font-family: 'Open Sans Light';
-    line-height: 25px;
-    white-space:pre-line;
+    line-height: 24px;
+    white-space: pre-line;
     margin-top: 4px;
 }
 
-.text-blog h1 {
+.text-blog .title-text {
      font-size: 24px;
      color: #454545;
+    font-family: 'League Gothic Regular';
 }
 
 .text-blog span {
@@ -466,16 +469,16 @@ section {
 }
 
 .slide--down {
-    margin-top: 27px;
+    margin-top: 21px;
 }
 
 .recent {
-    width: 88%;
+    width: 286px;
     margin: 47px auto 89px;
     
 }
 
-.recent h1 {
+.recent .title-text {
     font-size: 30px;
     color: #454545;  
 }
@@ -491,17 +494,18 @@ section {
     float: left;
     background:url(images/circle.png) left top no-repeat;
     margin-top: 17px;
-    margin-right: 14px;
+    margin-right: 13px;
 }
 
 .box--content .box__text {
     width: 216px;
     height: 65px;
-    padding-top: 17px;
+    padding-top: 20px;
 }
 
-.box--content .box__text h2 {
+.box--content .box__text .title-h2 {
     font-family: 'Open_Sans Extrabold';
+    color: #454545;
     display: block;
     width: 71%;
     height: 22px;
@@ -515,12 +519,13 @@ section {
     line-height: 22px;
     height: 22px;
     overflow: hidden;  
+    text-shadow: inherit;
+    color: #454545;
 }
 
 .box--content3 {
     height: 65px;
     overflow: hidden;
-}
 }
 
  .box--content3 .box__img {
@@ -532,14 +537,14 @@ section {
         margin-right: 14px;
     }
     
-    .box--content3 .box__text h2 {
+    .box--content3 .box__text .title-h2 {
         font-family: 'Open_Sans Extrabold';
+        color: #454545;
         line-height: 22px;
         overflow: hidden;
         font-size: 16px;
         height: 22px;
-        width: 71%;
-        
+        width: 71%; 
     }
     
     .box--content3 .box__text {
@@ -551,6 +556,7 @@ section {
 
     .box--content3 .box__text p {
         font-family: 'Open Sans Light';
+        color: #454545;
         font-size: 16px;
         line-height: 22px;
         height: 22px;
@@ -558,26 +564,27 @@ section {
     }
 
 .recent-link a {
-    color: #000;
+    color: #454545;
     text-decoration: none;
     float: right;
     font-size: 18px;
 }
 
 .recent-link {
-    margin-top: 18px;
-    margin-right: 7px;
+    margin-top: 24px;
+    margin-right: 9px;
 }
 
 .logotip {
     width: 260px;
-    margin: 0 auto 54px;
+    height: 420px;
+    margin: 0 auto;
 }
 
 .logo li {
     display: inline-block;
-    margin-right: 27px;
-    margin-left: 27px;
+    margin-right: 26px;
+    margin-left: 31px;
     margin-top: 52px;
 }
 
@@ -618,6 +625,7 @@ footer {
 
 .foot-text span {
     font-weight: bold;
+    font-family: 'Open_Sans Extrabold';
 }
 
 
@@ -645,8 +653,8 @@ footer {
     .black-line {
         display: block;
         height: 246px;
-        min-width: 480px;
-        max-width: 767px;
+        /*min-width: 480px;
+        max-width: 767px;*/
         width: 100%;
         opacity: 0.2;
         background: #000;
@@ -654,7 +662,6 @@ footer {
         z-index: 1;
         position: absolute;
         top: 35px;
-   
     }
      
     .container {
@@ -697,33 +704,42 @@ footer {
  
     .box {
         width: 420px;
-       margin: 61px auto -33px;
+       margin: 59px auto -33px;
+    }
+    
+    .box__img {
+        margin-right: 21px;
     }
     
     .box__text {
         width: 360px;
     }
     
-    .box__text h1 {
+    .box__text .title-text {
         line-height: 24px;
+        font-family: 'League Gothic Regular';   
     }
     
     .box__text p {
         line-height: 24px;
     }
-    
-    
-    
+     
     .blog {
-        width: 89%;
+        width: 420px;
+        margin: 0 auto;
     }
+    
+    .blog img {
+        left: -24px;
+    }
+    
     
     .text-blog {
         width: 362px;
-        margin-left: 56px;
+        margin-left: 37px;
     }
     
-    .text-blog h1 {
+    .text-blog .title-text {
         display: block;
         float: left;
         margin-right: 4px;
@@ -733,12 +749,15 @@ footer {
         
     }
     
-    .text-blog span {
+    .text-blog .title-text span {
         font-size: 30px;
+        /*width: 252px;*/
+        display: block;
+        margin-right: 145px;
     }
     
     .text-blog p {
-        clear: both;
+        /*clear: both;*/
         line-height: 25px;
     }
     
@@ -746,7 +765,7 @@ footer {
         width: 335px;
     }
     
-    .recent h1 {
+    .recent .title-text {
         padding-left: 10px;
     }
     
@@ -763,8 +782,9 @@ footer {
         width: 259px;
     }
     
-    .box--content .box__text h2 {
+    .box--content .box__text .title-h2 {
         width: 265px;
+        font-family: 'Open_Sans Extrabold';
     }
     
     .recent-link {
@@ -775,6 +795,7 @@ footer {
     .logotip {
         width: 360px;
         margin-bottom: 0;
+        height: 230px;
     }
     
     .logo {
@@ -787,9 +808,7 @@ footer {
         margin-right: 24px;
         margin-bottom: 25px;
     }
-    
    
-    
     .comments {
          display: block;
         height: 668px;
@@ -799,8 +818,8 @@ footer {
     .articles {
         margin: 0 auto;
         width: 450px;
-        height: 135px;
-        padding-top: 78px;
+        height: 143px;
+        padding-top: 66px;
         margin-bottom: 100px;
     }
 
@@ -812,18 +831,19 @@ footer {
         margin-bottom: 56px;
     } 
     
-    .ping-down {
+    .category .ping-down {
         font-size: 48px;
         text-decoration: none;  
         color: #454545;
+        font-family: 'League Gothic Regular';
+        line-height: 25px;
     }
-
-    
-    .ping-down span {
+  
+    .category .ping-down span {
         color: #b9b9b9;
     }
 
-    .category h2 {
+    .category .title-h2 {
         font-size: 16px;
         font-family: Georgia;
         font-style: italic;
@@ -836,15 +856,18 @@ footer {
         font-size: 16px;
         font-family: 'Open Sans Light';
         padding-top: 13px;
+        line-height: 21px;
     }
     
-    .category h1 {
+    .category .title-text {
         font-size: 24px;
+        font-family: 'League Gothic Regular';
     }
     
     .menu--down {
         display: block;
          margin: 0 auto;  
+        widows: 477px;
     }
 
     .menu--down a:hover {
@@ -853,9 +876,9 @@ footer {
 
     .menu--down li {
         display: inline-block;
-        margin-right: 0;
-        margin-top: 33px;
-        margin-left: 21px;
+        margin-right: 3px;
+        margin-top: 34px;
+        margin-left: 19px;
     }
 
     .menu--down a {
@@ -864,6 +887,7 @@ footer {
          color: #fff;
         text-decoration: none;
         line-height: 45px;
+        text-shadow: 3px 3px 2px #a4969a, 0 0 1pt #a4969a;
     }
     
     .foot-text p {
@@ -904,11 +928,12 @@ footer {
     .menu a {
         margin-left: 0;
         margin-right: 50px;
+        text-shadow: 2px 3px 2px #a4969a, 0 0 1pt #a4969a;
     }
     
     .header-top {
-    width: 768px;
-    margin: 0 auto;
+        width: 768px;
+        margin: 0 auto;
 }
 
     .ping {
@@ -922,8 +947,8 @@ footer {
       .black-line {
         display: block;
         height: 400px;
-        max-width: 768px;
-        min-width:481px;
+        /*max-width: 768px;
+        min-width:481px;*/
         width: 100%;
         opacity: 0.2;
         background: #000;
@@ -948,20 +973,21 @@ footer {
         margin-top: 132px;
         float: left;
         width: 284px;
-        height: 177px;
-        width: 284px
+        height: 186px;
+        width: 284px;
        overflow: hidden;
     }
     
-    .text-header h1 {
+    .text-header .title-text {
         font-size: 48px;
         color: #fefefe;
-        line-height: 36px;
         line-height: 40px;
+        height: 42px;
     }
 
-    .text-header h2 {
+    .text-header .title-h2 {
         font-size: 24px;
+        font-family: 'League Gothic Regular';
         color: #edbfff;
          line-height: 45px;
         width: 284px;
@@ -976,7 +1002,7 @@ footer {
         font-weight: normal;
         font-family: 'Open Sans Light';
         line-height: 25px;
-        height: 117px;
+        /*height: 117px;*/
     }
 
     .iphon {
@@ -1013,7 +1039,7 @@ footer {
     .box {
         width: 28%;
         float: left;
-        margin-top: 59px;
+        margin-top: 57px;
         margin-right: 50px;
         overflow: hidden;
     }
@@ -1036,14 +1062,16 @@ footer {
         line-height: 23px;
     }
 
-    .box__text  h1 {
+    .box__text  .title-text {
          font-size: 24px;
          padding-bottom: 4px;
+        font-family: 'League Gothic Regular';
+        text-shadow: 1px 1px 1px #000, 0 0 1pt #000;
     }
 
     .box__link {
          float: right;
-         margin-top: 13px;
+         margin-top: 11px;
         margin-right: 5px;
     }
     
@@ -1081,14 +1109,15 @@ footer {
         float: left;
         width: 312px;
         height: 267px;
-        margin-left: 25px;
+        /*margin-left: 25px;*/
+        margin: 0 auto;
         position: relative;
         margin-bottom: 29px;
     }
     
     .blog img {
-        top: 20px;
-        left: -25px;
+        top: 17px;
+        left: -23px;
     }
 
     .text-blog {
@@ -1099,20 +1128,28 @@ footer {
         height: 205px;
         overflow: hidden;
     }
+    
 
     .slide--down {
         margin-left: 138px;
     }
     
-    .text-blog h1 {
+    .text-blog .title-text {
         margin-bottom: 0px;
         line-height: 28px;
         font-size: 24px; 
         float: none;
+        font-family: 'League Gothic Regular';
+        margin-left: 4px;
+        margin-top: 1px;
     }
     
-    .text-blog span {
+    .text-blog .title-text span {
         font-size: 25px;
+    }
+    
+    .text-blog p {
+        line-height: 24px;
     }
 
     .recent {
@@ -1125,6 +1162,7 @@ footer {
 
     .box--content {
         height: 70px;
+        width: 345px;
         overflow: hidden;
     }
 
@@ -1134,17 +1172,18 @@ footer {
         float: left;
         background:url(images/circle.png) left top no-repeat;
         margin-top: 13px;
-        margin-right: 17px;
+        margin-right: 20px;
     }
 
     .box--content .box__text {
-        width: 77%;
+        width: 265px;
         height: 70px;
-        padding-top: 15px;
+        padding-top: 13px;
     }
 
-    .box--content .box__text h2 {
-        width: 95%;
+    .box--content .box__text .title-h2 {
+        width: 265px;
+        font-family: 'Open_Sans Extrabold'; 
     }
     
     .recent-link {
@@ -1159,6 +1198,7 @@ footer {
     .logotip {
         clear: both;
         width: 100%;
+        height: 121px;
     }
     
     .logo {
@@ -1175,8 +1215,14 @@ footer {
         margin-right: 37px;
         margin-bottom: 0;
     }
+    
     .comments {
-        height: 383px;
+        height: 396px;
+    }
+    
+    .category .ping-down {
+        font-size: 40px;
+        line-height: 24px;
     }
     
     .articles {
@@ -1188,13 +1234,13 @@ footer {
         display: block;
         float: left;
         width: 215px;
-        height: 207px;
+        height: 203px;
         overflow: hidden;
         margin-bottom: 60px;
-        margin-top: 8px;
+        margin-top: 23px;
     } 
 
-    .category h2 {
+    .category .title-h2 {
         font-size: 15px;
         font-family: Georgia;
         font-style: italic;
@@ -1207,11 +1253,11 @@ footer {
         color: #787878;
         font-size: 16px;
         font-family: 'Open Sans Light';
-        line-height: 21px;
-        padding-top: 9px;
+        line-height: 22px;
+        padding-top: 8px;
     }
     
-    .category h1 {
+    .category .title-text {
         font-size: 24px;
         line-height: 28px;
     }
@@ -1219,6 +1265,15 @@ footer {
     .category--second {
         margin-left: 52px;
         margin-right: 46px;
+    }
+    
+    .category--second .title-text {
+        color: #454545;
+        line-height: 30px;
+    }
+    
+    .category--third .title-text {
+        color: #454545;
     }
 
      .menu--down {
@@ -1241,7 +1296,7 @@ footer {
     .foot-text {
         float: right;
         margin-top: 0;
-        margin-right: 36px;
+        margin-right: 225px;
     }    
 }
 
@@ -1257,6 +1312,7 @@ footer {
         max-width: 2400px;
         min-width: 960px;
         height: 844px;
+        overflow: hidden;
     }
  
     .wrapper {
@@ -1271,12 +1327,13 @@ footer {
     
     .menu {
         display: block;
-        padding-top: 63px;
+        padding-top: 43px;
     }
     
      .menu a {
         margin-left: 49px;
         margin-right: 0px;
+         text-shadow: 2px 3px 2px #a4969a, 0 0 1pt #a4969a;
     }
      
     .header-top {
@@ -1285,7 +1342,7 @@ footer {
 
     .ping {
         float: left;
-        padding-top: 65px;
+        padding-top: 43px;
         margin-right: 123px;
     }
     
@@ -1296,8 +1353,8 @@ footer {
       .black-line {
         display: block;
         height: 400px;
-        max-width: 2400px;
-        min-width: 960px;
+       /* max-width: 2400px;
+        min-width: 960px;*/
         width: 100%;
         opacity: 0.2;
         background: #000;
@@ -1328,18 +1385,23 @@ footer {
     
     .text-header p {
         font-size: 18px;
+        line-height: 24px;
+        padding-top: 2px;
     }
     
-    .text-header h1 {
+    .text-header .title-text {
         font-size: 59px;
         color: #fefefe;
         line-height: 36px;
         line-height: 49px;
+        font-family: 'League Gothic Regular';
     }
     
-    .text-header h2 {
-        font-size: 29px;
-        line-height: 45px;
+    .text-header .title-h2 {
+        font-size: 32px;
+        line-height: 51px;
+        font-family: 'League Gothic Regular';
+        widows: 500px;
     }
     
     .iphon {
@@ -1362,12 +1424,13 @@ footer {
     }
     
     .slide {
-        margin-right: 305px;
+        margin-right: 354px;
+        margin-top: 112px;
     }
     
     section {
         width: 100%;
-        height: 323px;
+        height: 322px;
     }
     
     .company {
@@ -1376,42 +1439,46 @@ footer {
     }
     
     .box {
-        width: 32%;
+        width: 307px;
         margin-top: 61px;
-        margin-right: 10px;
+        margin-right: 28px;
     }
     
     .box__img {
-        margin-left: 15px;
+        margin-left: 10px;
         margin-top: 7px;
     }
     
     .box__text {
-        width: 74%;
+        width: 227px;
         margin-left: 8px;
     }
     
     .box__text p {
         line-height: 25px;
+        text-shadow: 2px 3px 2px #000, 0 0 1pt #000;
     }
     
-    .box__text h1 {
+    .box__text .title-text {
         font-size: 30px;    
         line-height: 24px;
         padding-bottom: 9px;
+        font-family: 'League Gothic Regular';
     }
     
     .box__link {
-        margin-right: 19px;
+        margin-right: 24px;
+        margin-top: 10px;
     }
     
     .box__link a {
         font-size: 19px;
+        
     }
     
     .box--second {
         margin-left: 10px;
-        margin-right: 10px;
+        margin-right: 0px;
     }
     
     .box--second .box__img {
@@ -1429,11 +1496,11 @@ footer {
     }
     
      .box--second .box__link {
-        margin-right: 3px;
+        margin-right: 26px;
     }
     
      .box--third {
-        margin-left: 0px;
+        margin-left: 1px;
         margin-right: 0px;
     }
     
@@ -1448,7 +1515,7 @@ footer {
         margin-right: 0px;
     }
     
-    .box--third .box__text h1 {
+    .box--third .box__text .title-text {
         font-size: 30px;
     }
     
@@ -1457,12 +1524,12 @@ footer {
     }
     
      .box--third .box__link {
-        margin-right: 16px;
+        margin-right: 0px;
     }
       
     .main-content {
         width: 960px;
-        height: 418px;
+        height: 385px;
     }
     
     .blog {
@@ -1470,7 +1537,6 @@ footer {
         float: left;
         width: 405px;
         height: 299px;
-        top: 36px;
         margin-left: 25px;
         padding-left: 50px;
         position: relative;
@@ -1478,7 +1544,7 @@ footer {
     }
     
     .blog img {
-        margin-top: -4px;
+        margin-top: 0px;
     }
     
     .text-blog {
@@ -1497,28 +1563,39 @@ footer {
         white-space:pre-line;
         margin-top: 4px;
         padding-top: 10px;
-        clear: both;
+        
     }
  
-    .text-blog span {
+    .text-blog .title-text span {
         font-size: 30px;
         padding-left: 3px;   
     }
     
-    .text-blog h1 {
+    .text-blog .title-text {
         font-size: 30px;
         color: #454545;
         float: left;
-        line-height: 29px;
+        line-height: 14px;
+        margin-left: 0;
+        margin-bottom: 18px;
     }
  
+    .slide--down {
+        margin-left: 197px;
+    }
+    
     .recent {
         width: 450px;
         height: 275px;
         float: left;
        margin-left: 30px;
-        margin-top: -20px;
+        margin-top: -105px;
         padding-bottom: 5px;
+        margin-bottom: 0;
+    }
+    
+    .recent .title-text {
+        padding-left: 0;
     }
     
     .box--content {
@@ -1549,7 +1626,7 @@ footer {
         height: 49px;
     }
     
-    .box--content3 .box__text h2 {
+    .box--content3 .box__text .title-h2 {
         font-family: 'Open_Sans Extrabold';
         line-height: 22px;
         overflow: hidden;
@@ -1565,7 +1642,8 @@ footer {
     }
     
     .recent-link {
-        margin-top: 10px;
+        margin-top: 14px;
+        margin-right: 0;
     }
        
     .recent-link a {
@@ -1583,7 +1661,7 @@ footer {
      .menu--down {
         display: block;
         float: left;
-        width: 82%;
+        width: 788px;
         margin: 0;
         padding-top: 1px;
     }
@@ -1591,7 +1669,7 @@ footer {
     .articles {
         width: 960px;
         margin: 0 auto;
-        padding-top: 95px;
+        padding-top: 75px;
     }
     
     .category {
@@ -1599,45 +1677,68 @@ footer {
         width: 281px;
     }
     
-    .category h1 {
+    .category .title-text {
         font-size: 48px;
         line-height: 42px;
     }
     
-    .category h2 {
-        line-height: 45px;
+    .category .title-h2 {
+        line-height: 33px;
+        font-family: Georgia;
+        padding-top: 15px;
     } 
     
     .category p {
         line-height: 24px;
     } 
     
-    .category--second h1 {
+    .category .ping-down {
+        font-size: 48px;
+    }
+    
+    .category--second .title-text {
         font-size: 30px;
-        margin-top: -6px;
-        padding-left: 4px;
+        margin-top: -16px;
+        padding-left: 0;
+        color: #454545;
     }
     
      .category--second p {
-        padding-left: 3px;
+        padding-left: 0;
     }
     
-     .category--third h1 {
+    .category--second {
+        margin-left: 58px;
+        margin-right: 59px;
+    }  
+    
+     .category--third .title-text {
         font-size: 30px;
-        margin-top: -6px;
-        padding-left: 4px;
+        margin-top: -17px;
+        padding-left: 0;
+         color: #454545;
     }
+    
+    .logo li {
+        margin-left: 5px;
+        margin-right: 58px;
+    }
+    
+   
     
      .category--third p {
-        padding-left: 3px;
+        padding-left: 0;
     }
     
     footer {
         height: 113px;
+        overflow: hidden;
     }
     
     .menu--down li {
-        margin-top: 32px;
+        margin-top: 34px;
+        margin-left: 1px;
+        margin-right: 28px;
     }
     
     .menu--down a {
@@ -1646,13 +1747,14 @@ footer {
     }
     
     .foot-left {
-        width: 965px;
+        width: 940px;
         height: 100px;
         margin: 0 auto;
     }
     
     .foot-text {
-        margin-top: 43px;
+        margin-top: 32px;
+        margin-right: -18px;
     }    
     
 }
