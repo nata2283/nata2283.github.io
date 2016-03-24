@@ -309,8 +309,17 @@ section {
      height: 577px;
     color: #fff;
     padding-top: 1px;   
-  background-image: linear-gradient(to top, #37293e, #765283);
+       /*background: linear-gradient(to top, #37293e, #765283);*/
     /*background-color: #765283;*/
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#37293e), to(#765283)); /* Safari 4-5, Chrome 1-10, iOS 3.2-4.3, Android 2.1-3.0 */
+  background: -webkit-linear-gradient(top, #37293e, #765283); /* Chrome 10+, Safari 5.1+, iOS 5+, Android 4+ */
+  background-image: -moz-linear-gradient(top, #765283, #37293e); /* Firefox 3.6+ */
+  background: -ms-linear-gradient(top, #37293e, #765283); /* IE 10+ */
+  background-image: -o-linear-gradient(top, #37293e, #765283); /* Opera 11.10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#765283', endColorstr='#37293e');    
+  background-image: linear-gradient(to top, #37293e, #765283);
+    background-color: #37293e;
+
 }
 
 .company {
