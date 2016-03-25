@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.title {
+    text-align: center;
+    
+    font-size: 23px;
+    font-weight: 200;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+form {
+    width: 700px;
+    margin: 0 auto;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+
+
+label {
+    line-height: 26px;
+    display: block;
+    padding-left: 30px;
+    position: relative;
+     
+}
+
+
+[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    width: 330px;
+    height: 60px;
+    display: block;
+    margin: 60px auto;
+    font-size: 20px;
+    background: #d0e1f1;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
