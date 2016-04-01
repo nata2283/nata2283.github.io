@@ -1,43 +1,88 @@
-function startTimer() {
-    var my_timer = document.getElementById("text");
+myBody = document.body;
+var timeCont;
+var onTimer;
+var pause = 0;
+var pauseTime = null;
+var startTime;
+var init = 0;
+var beginTime;
+var hSpan = document.getElementById('hours'),
+    minSpan = document.getElementById('mins'),
+    secSpan = document.getElementById('secs'),
+    msSpan = document.getElementById('ms');
+var myButtons = document.createElement('button');
+var startButton = new createButton('Start');
+var stopButton = new createButton('Clear');
+
+function createButton(name)  {
+   var myButton = document.createElement('button');
+   var button = document.createElement('button');
+   button.innerHTML = name;
+   myBody.appendChild(button);
     
-    var time = my_timer.innerHTML;
+    if (name == 'Start') {
+        button.classList.add('start');
+    } else {button.classList.add('clear');}
+     return button;
+}
+        
+startButton.addEventListener('click', startBut);     
+stopButton.addEventListener('click', stopBut); 
     
-    var arr = time.split(":");
-    var h = arr[0];
-    var m = arr[1];
-    var s = arr[2];
-    var my_ms = document.getElementById("milisec");
-   
-   var time2 = my_ms.innerHTML;
-    var ms = +time2;
-    
-   if (ms == 500) {
-    if (s == 60) {
-      if (m == 60) {
-        if (h == 99) {
-          alert("Время вышло");
-          window.location.reload();
-          return;
-        }
-        h++;
-        m = 0;
-        if (h < 10) h = "0" + h;
+function startBut() {
+    (startButton.innerHTML === 'Start') ? (
+      beginTime = new Date() - pauseTime,
+      console.log('beginTime  45 ' + beginTime),
+      console.log('pauseTime ' + pauseTime),
+      runTimer(),
+  startButton.innerHTML = 'Pause') : (
+        stopTimer(), 
+        startButton.innerHTML = 'Start')
+}
+
+function stopBut() {
+    stopButton.innerHTML === 'Clear';
+    resetTimer(onTimer);    
+}  
+       
+ function runTimer() {
+  onTimer = setInterval(myTimer, 1); 
+      function myTimer() {   
+          var delta = new Date() - beginTime;
+          var hours = Math.floor(delta/3600000);
+          delta = delta - hours*3600000;
+          var mins = Math.floor( delta/60000 );
+          delta = delta - mins*60000;
+          var secs = Math.floor( delta/1000 );
+          delta = delta - secs*1000;
+          var ms = delta;
+          hSpan.innerHTML = format(hours, 2);
+          minSpan.innerHTML = format(mins, 2);
+          secSpan.innerHTML = format(secs, 2);
+          msSpan.innerHTML = format(ms, 3);
       }
-      m++;
-      if (m < 10) m = "0" + m;
-      s = 0;
-    }
-     s++;
+}
 
-    if (s < 10) s = "0" + s;
-     ms = 0;  
-       document.getElementById('text').innerHTML = h+':'+m+':'+s;
-   } else ms++;
-    document.getElementById('milisec').innerHTML = '      '+ms;
-    timeout1 = setTimeout(startTimer, 50);  
+function format(num, maxNumbers) {
+  var numStr = num + '';
+  while(numStr.length < maxNumbers) {
+    numStr = '0' + numStr;
   }
+  return numStr;
+}
 
-function stopTimer() {    
-clearTimeout(timeout1); 
+function stopTimer() {   
+    clearInterval(onTimer);
+    pauseTime = new Date() - beginTime;
+}
+
+function resetTimer() {
+    ms.innerHTML = '000';
+    secs.innerHTML = '00';
+     mins.innerHTML = '00';
+    hours.innerHTML = '00';
+    clearInterval(onTimer);
+    beginTime = new Date();
+    pauseTime = null;
+    startButton.innerHTML = 'Start';    
 }
