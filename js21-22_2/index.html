@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Homework JavaScript task 13-14</title>
+        <link rel="stylesheet" href="css/style.css">
+         <link rel="stylesheet" href="css/modal.css">
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/tmpl.js"></script>
+        <script src="js/dist/script.js"></script>
+       
+    </head>
+    <body>
+         <div class="wrapper">
+        <div class="test-body">         
+        <script type="text/tmpl" id="test">
+                <h1><%= data[0].myTitle %></h1>
+                <form>
+               <% for (var i = 1; i < 4; i++) { %>
+               <li class="quest"><span><%= i%>. <%= data[i].question %></span>
+                    <ul>
+                        <% for (var j = 0; j < 3; j++) {%>
+                        <li><input type="radio" class="result" name="<%= data[i].name %>" value="<%= data[i].rightAnswer[j] %>"><%= data[i].answer[j] %></li>
+               
+               <% }; %>
+                    </ul>
+               <% }; %> </li> 
+               </form>
+            </script>
+           
+        </div> 
+             <button class="button">Проверить мои результаты</button>
+             
+             <div id="modal_form"><!-- Сaмo oкнo --> 
+      
+      <!-- Тут любoе сoдержимoе -->
+                 <p class="result-answer"></p>
+                 <button class="clear">OK</button>
+</div>
+<div id="overlay"></div><!-- Пoдлoжкa -->
+        </div> 
+       
+    </body>
+</html>    
