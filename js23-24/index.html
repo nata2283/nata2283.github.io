@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Homework JavaScript task 23-24</title>
+        <link rel="stylesheet" href="style.css">
+        <!--<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>-->
+        <script type="text/javascript" src="js/tmpl.js"></script>
+        
+        <script data-main = "js/app" src="js/require.js"></script>
+       
+    </head>
+    <body>
+        <script type="text/tmpl" id="wrapper-template">
+         <div class="wrapper">
+            <h1>Список участников:</h1> 
+            <p>* - редактирование участников - по двойному щелчку мышки</p>
+             <ul class="item-list"></ul> 
+             <div class="controlls">
+                 <input type="text" class="item-value">
+                 <button class="item-add">ДОБАВИТЬ</button>
+             </div>     
+        </div> 
+        </script>
+        
+        <script type="text/tmpl" id="list-template">
+            <% for (var i = 0; i < data.length; i++) { %>
+                <li data-val="<%= data[i] %>" class="item-edit"><%= i+1 %><%= '. ' %><%= data[i] %><span data-value="<%= data[i] %>" class="item-delete"> x </span></li>
+                <% }; %>
+        
+        </script>    
+    </body>
+</html>    
