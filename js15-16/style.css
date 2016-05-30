@@ -42,24 +42,26 @@ form {
     margin: 30px auto;
 }
 
-#results ul {
-    padding-left: 110px;
-    width: 600px;
+#results {
+    width: 430px;
+    height: 125px;
+    margin: 0 auto;
 }
 
-#results li {
-    list-style: none;
-    padding-bottom: 20px;
+.grid {
+  margin: 0 auto;
+  width: 300px;
 }
 
-#results a {
-    display: block;
-    width: 500px;
-    font-size: 22px;
-    font-family: sans-serif;
-    font-weight: bold;
-    text-decoration: none;
-    padding-bottom: 5px;
+.grid-item {
+    margin: 5px 10px;
+}
+
+.grid-item {
+  height: 120px;
+  width: 120px;
+  float: left;
+  border-radius: 5px;
 }
 
 .down-name {
