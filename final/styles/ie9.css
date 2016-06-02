@@ -1,0 +1,79 @@
+  .grid {
+        width: 750px;
+        height: 967px;
+    }
+    
+
+.first {
+        float: left;
+        margin: 5px 10px;
+        height: 308px;
+        width: 30%;
+        background: url(../images/ideanew1.jpg) no-repeat;
+       /*position: relative;*/
+    }
+
+ .second {
+        float: left;
+        margin: 5px 10px;
+        height: 308px;
+        width: 30%;
+        background: url(../images/ideanew2.jpg) no-repeat;
+      
+    }
+        
+ .third {
+        float: left;
+        margin: 5px 10px;
+        height: 308px;
+        width: 30%;
+        background: url(../images/ideanew3.jpg) no-repeat;
+      
+    }
+
+ .fourth {
+        float: left;
+        margin: 5px 10px;
+        height: 308px;
+        width: 30%;
+        background: url(../images/ideanew4.jpg) no-repeat;
+       
+    }
+
+     .fifth {
+        width: 62.5%; /*488px;*/
+         height: 308px;
+         background: url(../images/ideanew5.jpg) no-repeat;
+    }
+
+.sixth {
+        width: 62.5%; /*488px;*/
+     height: 308px;
+         background: url(../images/ideanew6.jpg) no-repeat;
+    }
+
+.seventh {
+        float: left;
+        margin: 5px 10px;
+        height: 308px;
+        width: 30%;
+        background: url(../images/ideanew7.jpg) no-repeat;
+       
+    }
+    /*.grid-item {
+        float: left;
+        height: 308px;
+        width: 30%;
+        background: url(../images/ideanew1.jpg) no-repeat;
+       
+    }
+        
+    .grid-item--width2 {
+        width: 62.5%; /*488px;*/
+         /*background: url(../images/ideanew5.jpg) no-repeat;
+    }
+*/
+    .word-name {
+        text-align: center;
+    }
+

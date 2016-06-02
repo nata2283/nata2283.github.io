@@ -1,0 +1,427 @@
+@font-face {
+  font-family: 'Roboto Light';
+  src: url("../fonts/Roboto-Light-webfont.eot");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url("../fonts/montserrat-regular-webfont.eot");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('../fonts/montserrat-bold-webfont.eot'); 
+    font-weight: normal;
+    font-style: normal;}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+        min-width: 768px;
+        max-width: 1439px;
+        margin: 0 auto;
+    }
+
+    header {
+        min-width: 768px;
+        width: 100%;
+        max-width: 1439px;
+        margin: 0 auto;
+        height: 700px;
+        background: url(../images/backgr-header_desk.jpg) no-repeat;
+        background-position: center;
+    }
+
+    .title {
+        float: left;
+        padding-top: 48px;
+        padding-left: 44px;
+        font-family: 'Montserrat Bold';
+    }
+    
+    .log {
+        float: right;
+        padding-top: 45px;
+        padding-right: 26px;
+    }
+
+.log a {
+      font-family: 'Montserrat Bold';
+    behavior: url('js/PIE.htc');
+    
+}
+   .log a:hover {
+   /*width: 90px;
+    height: 34px;
+     padding: 4px 12px;
+    border: 2px solid #fff;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+    border-radius: 20px;
+    width: 71px;  */
+        border: 2px solid #fff;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+    border-radius: 20px;
+     behavior: url('js/PIE.htc');
+    position: relative;
+      /* z-index: 10;*/
+}
+
+    header h1 {
+        clear: both;
+        width: 485px;
+        padding-top: 136px;
+        margin: 0 auto;
+        font-size: 49px;
+        line-height: 60px;
+        font-family: 'Montserrat Bold';
+    }
+    
+    .text-robo {
+        width: 410px;
+        padding-top: 29px;
+        padding-bottom: 39px;
+        font-size: 24px;
+    }
+    
+    .btn {
+        width: 226px;
+       
+     
+        behavior: url('js/PIE.htc');
+    position: relative;
+        
+    }
+    
+     .work {
+        height: 570px;
+         width: 768px;
+         margin: 0 auto;
+    }
+    
+    .block {
+        float: left;
+        position:relative;
+        overflow:hidden;
+        width: 236px;
+        height: 401px;
+        margin-left: 9px;
+        margin-right: 11px;
+    }
+    
+    .img {
+        width: 236px;
+        height: 401px;
+    }
+    
+    
+   .one {    
+         
+    background: url('../images/work1_tabl.png') center 0 no-repeat;
+  }
+.two {
+        
+    background: url('../images/work2_tabl.png') center 0 no-repeat;
+  }
+    .three{
+         
+    background: url('../images/work3_tabl.png') center 0 no-repeat;
+  }
+
+.block .img:first-child {
+display:block;
+}
+.block span {
+margin-top:-13px;
+width: 30px;
+height: 50px;
+display:block;
+position:absolute;
+top:17%;
+cursor:pointer;
+background:url('../images/arrow_sprite.png') no-repeat;
+}
+.block span.next {
+right: 22px;
+top: 56px;    
+background-position: -31px 0;
+}
+
+.block span.prev {
+left: 22px;
+top: 56px;
+background-position: 0 0;
+}
+
+    .work--btn {
+        width: 71px;
+        height: 20px;
+        margin-top: 145px;
+       
+        color: #fff;
+           behavior: url('js/PIE.htc');
+    position: absolute;
+    }
+    
+    .work--btn-second {
+        margin-top: 160px;
+        width: 71px;
+        height: 20px;
+       behavior: url('js/PIE.htc');
+         position: absolute;
+    }
+    
+    .main-plug {
+        margin-top: 144px;
+    }
+    
+    .text-plug {
+        width: 201px;
+        margin-top: 144px;
+    }
+    
+    .text-main {
+        padding-top: 95px;
+        padding-bottom: 37px;
+    }
+    
+    .main-plug {
+        margin-top: 145px;
+    }
+    
+    .main-plug--second {
+        width: 201px;
+        margin-top: 161px;
+    }
+    
+    
+    .text-main--partner {
+        margin-top: 11px;
+        padding-bottom: 30px;
+        padding-top: 73px;
+        width: 415px;
+    }
+    
+    .partner {
+        width: 507px;
+        margin: 0 auto;
+        height: 760px;
+    }
+    
+    .foto {
+        width: 223px;
+        float: left;
+        margin: 0 14px 21px 16px;
+    }
+    
+    .clearfix:after {
+    content:"";
+    clear: both;
+    display: block;
+}
+    
+ .holiday {
+        height: 1065px;
+    }
+    
+    
+    .btn--partner {
+        width: 191px;
+        margin-top: 48px;
+        behavior: url('js/PIE.htc');
+        position: relative;
+    }
+    
+    .text-main--holiday {
+        width: 360px;
+        padding-top: 36px;
+    }
+    
+      .grid {
+          margin: 0 auto;
+        width: 750px;
+        height: 967px;
+    }
+    
+     .first {
+        float: left;
+        margin: 5px 10px;
+        height: 308px;
+        width: 30%;
+        background: url(../images/ideanew1.jpg) no-repeat;
+       /*position: relative;*/
+    }
+
+ .second {
+        float: left;
+        margin: 5px 10px;
+        height: 308px;
+        width: 30%;
+        background: url(../images/ideanew2.jpg) no-repeat;
+      
+    }
+        
+ .third {
+        float: left;
+        margin: 5px 10px;
+        height: 308px;
+        width: 30%;
+        background: url(../images/ideanew3.jpg) no-repeat;
+      
+    }
+
+ .fourth {
+        float: left;
+        margin: 5px 10px;
+        height: 308px;
+        width: 30%;
+        background: url(../images/ideanew4.jpg) no-repeat;
+       
+    }
+
+     .fifth {
+        width: 62.5%; /*488px;*/
+         height: 308px;
+         background: url(../images/ideanew5.jpg) no-repeat;
+    }
+
+.sixth {
+        width: 62.5%; /*488px;*/
+     height: 308px;
+         background: url(../images/ideanew6.jpg) no-repeat;
+    }
+
+.seventh {
+        float: left;
+        margin: 5px 10px;
+        height: 308px;
+        width: 30%;
+        background: url(../images/ideanew7.jpg) no-repeat;
+       
+    }
+
+.grid-item div {
+      display: block;
+      position: relative;
+      width: 84%;
+      margin: auto;
+      top: 50%;
+      left: 1%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-family: "Montserrat Bold";
+      font-size: 21px;
+      margin-bottom: 14px; }
+
+    .grid-item div p {
+          
+        text-align: center; }
+
+
+    .search {
+        height: 350px;
+    }
+    
+    .text-main--search {
+        width: 360px;
+        padding-bottom: 32px;
+    }
+    
+    .text-robo--search {
+        padding-top: 0px;
+        font-size: 19px;
+    }
+   
+    input[type=text] {
+        float: left;
+        height: 27px;
+        width: 221px;
+        padding-left: 20px;
+        font-size: 15px;
+        padding-top: 13px;
+    }
+    
+
+    .btn--search {
+        margin-right: 0px;
+        width: 169px;
+    }
+    
+    .forma-search {
+        margin: 0 auto;
+        width: 421px;
+         
+    }
+    
+    .line {
+        margin-top: 0px;
+    }
+    
+    .title--footer {
+        float: left;
+        width: 168px;
+        padding-left: 24px;
+        padding-top: 38px;
+            font-size: 17px;
+    }
+    
+    .company {
+        width: 85px;
+        float: left;
+        margin-top: 21px;
+        margin-left: 63px;
+    }
+    
+   .text-footer {
+       
+        padding-bottom: 15px;
+        
+    }
+    
+    .menu-footer {
+       width: 85px;
+        padding-left: 9px;
+      margin-top: 0;
+    }
+    
+    .menu-footer li {
+        display: block;
+        padding-left: 0px;
+       
+    }
+    
+    .menu-footer a {
+        line-height: 22px;
+    }
+    
+    .text-footer--partner {
+        float: left;
+        margin-left: 95px;
+        margin-top: 35px;
+    }
+    
+    .text-footer--design {
+        float: right;
+        margin-top: 28px;
+        margin-right: 47px; 
+    }
+    
+    .work-foto--footer {
+        clear: both;
+        float: right;
+        margin-right: 40px;
+        margin-top: -110px;
+    }
+    
+   
