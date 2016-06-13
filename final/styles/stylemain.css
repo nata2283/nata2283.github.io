@@ -80,18 +80,8 @@ header {
     width: 94px;
     height: 38px;
     display: inline-block; }
-  .log li:first-child {
-    width: 90px; }
-  .log a:hover {
-    width: 90px;
-    height: 34px;
-    padding: 4px 12px;
-    border: 2px solid #fff;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    border-radius: 20px;
-    width: 71px; }
+    .log li:first-child {
+      width: 90px; }
   .log a {
     color: #fff;
     font-size: 14px;
@@ -99,8 +89,18 @@ header {
     font-family: "Montserrat Bold", sans-serif;
     line-height: 20px;
     padding-left: 18px; }
-  .log a:first-child {
-    padding-left: 21px; }
+    .log a:hover {
+      width: 90px;
+      height: 34px;
+      padding: 4px 12px;
+      border: 2px solid #fff;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      border-radius: 20px;
+      width: 71px; }
+    .log a:first-child {
+      padding-left: 21px; }
 
 .title {
   display: block;
@@ -572,7 +572,7 @@ footer {
     .grid-item div {
       display: block;
       position: absolute;
-      width: 84%;
+      width: 85%;
       margin: auto;
       top: 50%;
       left: 50%;
@@ -586,8 +586,36 @@ footer {
       .grid-item div p {
         text-align: center; }
 
+  .grid-item--second {
+    margin-left: 11px;
+    margin-right: 1px; }
+
+  .grid-item--third {
+    margin-left: 14px;
+    margin-right: 1px; }
+
+  .grid-item--fourth {
+    margin-top: 16px;
+    margin-bottom: 1px; }
+
+  .grid-item--fifth {
+    margin-top: 16px;
+    margin-bottom: 1px;
+    margin-left: 12px;
+    margin-right: 1px; }
+
+  .grid-item--seventh {
+    margin-top: 23px;
+    margin-bottom: 1px;
+    margin-left: 14px;
+    margin-right: 1px; }
+
   .grid-item--width2 {
     width: 64%; }
+
+  .grid-item--sixth {
+    margin-top: 23px;
+    margin-bottom: 1px; }
 
   .search {
     height: 350px; }
@@ -645,11 +673,11 @@ footer {
   .text-footer--partner {
     float: left;
     margin-left: 95px;
-    margin-top: 35px; }
+    margin-top: 38px; }
 
   .text-footer--design {
     float: right;
-    margin-top: 28px;
+    margin-top: 24px;
     margin-right: 47px; }
 
   .work-foto--footer {
@@ -677,21 +705,20 @@ footer {
     padding-right: 11%;
     /*226px;*/
     width: 228px; }
-    .log li:first-child {
-      width: 75px; }
-    .log li > a:first-child {
-      padding-left: 20px; }
-    .log a:first-child:hover {
-      width: 75px;
-      height: 36px;
-      padding: 5px 10px;
-      border: 2px solid #fff;
-      -webkit-border-radius: 20px;
-      -moz-border-radius: 20px;
-      -ms-border-radius: 20px;
-      border-radius: 20px; }
     .log li {
       width: 90px; }
+      .log li:first-child {
+        width: 75px; }
+      .log li > a:first-child:hover {
+        width: 75px;
+        height: 36px;
+        padding: 5px 10px;
+        border: 2px solid #fff;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        border-radius: 20px;
+        /*padding-left: 20px;*/ }
 
   header h1 {
     clear: both;
@@ -816,7 +843,8 @@ footer {
 
   .text-main--holiday {
     width: 360px;
-    padding-top: 6px; }
+    padding-top: 6px;
+    padding-bottom: 25px; }
 
   .search {
     height: 324px; }
@@ -834,8 +862,47 @@ footer {
     width: 1000px;
     height: 965px; }
 
+  .grid-item {
+    width: 30%; }
+
+  .grid-item--first {
+    margin-left: 32px;
+    margin-right: 1px; }
+
+  .grid-item--second {
+    margin-left: 19px;
+    margin-right: 1px; }
+
+  .grid-item--third {
+    margin-left: 5px;
+    margin-right: 1px; }
+
+  .grid-item--fourth {
+    margin-top: 12px;
+    margin-bottom: 1px;
+    margin-left: 31px;
+    margin-right: 1px; }
+
+  .grid-item--fifth {
+    margin-top: 12px;
+    margin-bottom: 1px;
+    margin-left: 17px;
+    margin-right: 1px; }
+
+  .grid-item--sixth {
+    margin-top: 23px;
+    margin-bottom: 1px;
+    margin-left: 31px;
+    margin-right: 1px; }
+
+  .grid-item--seventh {
+    margin-top: 23px;
+    margin-bottom: 1px;
+    margin-left: 5px;
+    margin-right: 1px; }
+
   .grid-item--width2 {
-    width: 64%; }
+    width: 62%; }
 
   input[type=text] {
     float: left;

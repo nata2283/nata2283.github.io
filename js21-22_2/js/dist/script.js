@@ -6,16 +6,19 @@ var textModal = 'Количество правильных ответов: ';
 var myTest = [{ myTitle: '' + title }, {
     question: 'Зачем используется ключевое слово var?',
     answer: ['Для выполнения написанного выше кода', 'Для создания новой переменной', 'Для вывода результатов программы на экран'],
-    rightAnswer: [0, 1, 0]
+    rightAnswer: [0, 1, 0],
+    name: 'first'
 }, {
     question: 'Какое название переменной верное с точки зрения общепринятого в javascript стиля названия переменных?',
     answer: ['myVariable', 'myvariable', 'my_variable'],
-    rightAnswer: [1, 0, 0]
+    rightAnswer: [1, 0, 0],
+    name: 'second'
 }, {
     question: 'Какого типа данных нет в javascript?',
     answer: ['Boolean', 'String', 'Decimal'],
-    rightAnswer: [0, 0, 1]
-}];
+    rightAnswer: [0, 0, 1],
+    name: 'third'
+   }];
 
 localStorage.setItem('task', JSON.stringify(myTest));
 
