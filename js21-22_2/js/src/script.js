@@ -23,7 +23,11 @@ let myTest = [
         question: 'Какого типа данных нет в javascript?',
         answer: ['Boolean', 'String', 'Decimal'],
         rightAnswer: [0, 0, 1],
+<<<<<<< HEAD
         name: 'third'  
+=======
+        name: 'third'
+>>>>>>> 3c87ca62f26f443a59a6000fe19044891d1da3cb
     }      
 ];
 

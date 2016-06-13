@@ -18,7 +18,11 @@ var myTest = [{ myTitle: '' + title }, {
     answer: ['Boolean', 'String', 'Decimal'],
     rightAnswer: [0, 0, 1],
     name: 'third'
+<<<<<<< HEAD
    }];
+=======
+}];
+>>>>>>> 3c87ca62f26f443a59a6000fe19044891d1da3cb
 
 localStorage.setItem('task', JSON.stringify(myTest));
 

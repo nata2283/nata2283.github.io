@@ -7,7 +7,7 @@ define (
                 var self = this;
     self.data = ['Алина', 'Артем', 'Наташа', 'Алексей'];
     self.addItem = function(item) {
-        if (item.length === 0) {
+        if (item.length === 0 || item.indexOf(' ') === 0) {
            
              return ;
             
