@@ -42,18 +42,21 @@
 
      .fifth {
         width: 62.5%; /*488px;*/
+          margin: 5px 10px;
          height: 308px;
          background: url(../images/ideanew5.jpg) no-repeat;
     }
 
 .sixth {
         width: 62.5%; /*488px;*/
-     height: 308px;
+        height: 308px;
+        margin: 5px 10px;
          background: url(../images/ideanew6.jpg) no-repeat;
     }
 
 .seventh {
         float: left;
+       /* margin: 5px 10px;*/
         margin: 5px 10px;
         height: 308px;
         width: 30%;

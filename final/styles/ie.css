@@ -248,7 +248,7 @@ background-position: 0 0;
     
       .grid {
           margin: 0 auto;
-        width: 750px;
+        width: 800px;
         height: 967px;
     }
     
@@ -256,7 +256,7 @@ background-position: 0 0;
         float: left;
         margin: 5px 10px;
         height: 308px;
-        width: 30%;
+        width: 238px; /*30%;*/
         background: url(../images/ideanew1.jpg) no-repeat;
        /*position: relative;*/
     }
@@ -265,7 +265,7 @@ background-position: 0 0;
         float: left;
         margin: 5px 10px;
         height: 308px;
-        width: 30%;
+          width: 238px; /*30%;*/
         background: url(../images/ideanew2.jpg) no-repeat;
       
     }
@@ -274,7 +274,7 @@ background-position: 0 0;
         float: left;
         margin: 5px 10px;
         height: 308px;
-        width: 30%;
+          width: 238px; /*30%;*/
         background: url(../images/ideanew3.jpg) no-repeat;
       
     }
@@ -283,20 +283,22 @@ background-position: 0 0;
         float: left;
         margin: 5px 10px;
         height: 308px;
-        width: 30%;
+        width: 238px; /*30%;*/
         background: url(../images/ideanew4.jpg) no-repeat;
        
     }
 
      .fifth {
-        width: 62.5%; /*488px;*/
+        width: 491px; /*488px;*/
          height: 308px;
+         float: left;
          background: url(../images/ideanew5.jpg) no-repeat;
     }
 
 .sixth {
-        width: 62.5%; /*488px;*/
+        width: 491px; /*488px;*/
      height: 308px;
+    float: left;
          background: url(../images/ideanew6.jpg) no-repeat;
     }
 
@@ -309,7 +311,7 @@ background-position: 0 0;
        
     }
 
-.grid-item div {
+/*.grid-item div {
       display: block;
       position: relative;
       width: 84%;
@@ -322,7 +324,7 @@ background-position: 0 0;
       color: #fff;
       font-family: "Montserrat Bold";
       font-size: 21px;
-      margin-bottom: 14px; }
+      margin-bottom: 14px; }*/
 
     .grid-item div p {
           
